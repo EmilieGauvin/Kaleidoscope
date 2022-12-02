@@ -1,39 +1,32 @@
-import * as THREE from 'https://unpkg.com/three@0.145.0/build/three.module'
 import Environment from './Environment';
 import Mirrors from './Mirrors';
 import Objects from './Objects';
 
+export default class World {
 
-export default class World
-{
-    constructor()
-    {
+    constructor() {
         this.mirrors = new Mirrors()
         this.objects = new Objects()
         this.environment = new Environment()
     }
 
-    lightMode()
-    {
+    lightMode() {
         this.environment.lightMode()
     }
 
-    darkMode()
-    {
+    darkMode() {
         this.environment.darkMode()
     }
 
-    resize()
-    {
+    resize() {
         this.mirrors.resize()
     }
 
-    update()
-    {
+    update() {
         if (this.objects) this.objects.update()
     }
 }
-            
+
 
 
 

@@ -18,7 +18,6 @@ export default class Environment
 
         this.setHemisphereLight()
         this.setSpotLight()
-        // this.setEnvironmentMap()
     }
 
     setHemisphereLight()
@@ -39,14 +38,8 @@ export default class Environment
     {   
         this.spotLight = new THREE.SpotLight('#ffffff', 12, 20, Math.PI * 0.1, 0.25, 1)
         this.spotLight.position.set(2, 8, 4)
-        // spotLight.target.position.x = sphere.position.x
-        // spotLight.target.position.y = sphere.position.y
-        // spotLight.target.position.z = sphere.position.z
         this.scene.add(this.spotLight)
-        
-        // const spotLightHelper = new THREE.SpotLightHelper(spotLight)
-        // this.scene.add(spotLightHelper)
-        
+
         //Debug
         if(this.debug.active)
         {
