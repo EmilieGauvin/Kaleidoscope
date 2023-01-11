@@ -1,5 +1,5 @@
-import * as THREE from 'https://unpkg.com/three@0.145.0/build/three.module'
-import { TrackballControls } from 'https://unpkg.com/three@0.145.0/examples/jsm/controls/TrackballControls.js';
+import * as THREE from 'https://cdn.jsdelivr.net/gh/mrdoob/three.js@r146/build/three.module.js'
+import { TrackballControls } from 'https://cdn.jsdelivr.net/gh/mrdoob/three.js@r146/examples/jsm/controls/TrackballControls.js';
 import Experience from "./Experience";
 
 export default class Camera {
